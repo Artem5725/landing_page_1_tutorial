@@ -1,0 +1,197 @@
+* {
+    /*border: 1px solid black; /**/
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+
+.header-container {
+    display: flex;
+    width: 1440px;
+    /*padding-top: 104px;
+    padding-left: 133px;
+    padding-right: 240px;
+    padding-bottom: 168px;/**/
+    /*определяются по вложенным элементам*/
+    padding: 104px 240px 168px 133px;
+    background-color: #F8F8F8;
+}
+
+.header-title {
+    /* Желательно позиционирование выносить наверх!!! */
+    margin-bottom: 53px; /*отсутпы до нижестощих элементов указываются*/
+    font-size: 24px;
+    line-height: 45px;
+    font-weight: 300;
+}
+
+.header-subtitle {
+    margin-bottom: 43px;
+    font-size: 250px;
+    line-height: 230px;
+    font-weight: 300;
+}
+
+.header-description {
+    margin-bottom: 61px;
+    font-size: 32px;
+    line-height: 50px;
+    font-weight: 300;
+}
+
+.buy-wrapper {
+    display: flex; /*чтобы элементы просто последовательно шли друг за другом*/
+
+    /*Можно задать и через грид, но это дольше*/
+    /*Grid вариант 1*/
+    /*display: grid;
+    grid-template-columns: 278px 143px;
+    grid-gap: 0;/**/
+
+    /*Grid вариант 2*/
+    /*display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 0;
+    place-content: stretch start;/**/
+}
+
+.header-buy-link {
+    display: block;
+    width: 278px;
+    height: 82px;
+    background-color: #161515;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 32px; /*выставляется высота блока, чтобы текста расположился по центру по высоте!!! */
+    line-height: 82px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.header-price {
+    width: 143px;
+    height: 82px;
+    background-color: #FFFFFF;
+    color: #272727;
+    font-size: 32px;
+    line-height: 82px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.header-image {
+    /* padding-top для контейнера задан для текста, который ниже картинки, по-хорошему
+можно изменить padding-top для header-container на 4 и задать margin-top для header-title */
+    width: 408px;
+    height: 720px;
+    margin-top: -100px;
+    margin-left: 36px;
+}
+
+.main-title {
+    margin-top: 39px;
+    font-size: 24px;
+    line-height: 45px;
+    font-weight: 300;
+    text-align: center;
+    color: #000000;
+}
+
+.main-subtitle {
+    margin-bottom: 84px;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 81px;
+    text-align: center;
+    color: #000000;
+}
+
+.main-item-wrapper {
+    width: 531px; /*сделал по наибольшему элементу*/
+    margin: 0 auto; /*auto - выравнивание по центру*/
+}
+
+.main-item-img-wrapper {
+    margin-left: 57px; /* (531-417) / 2*/
+    margin-bottom: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 417px;
+    height: 630px;
+    background-color: #F8F8F8;
+}
+
+.main-item-img-title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.main-item-img-description { /*m */
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+    color: #161515;
+}
+
+.main-item-img-description_small {
+    margin-left: 11px; /* (531-510) / 2 */
+    margin-bottom: 59px;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+    color: #161515;
+}
+
+.main-product-description-wrapper {
+    width: 515px;
+    margin: 59px auto 142px auto;
+}
+
+.main-product-description-title {
+    margin-bottom: 9px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 60px;
+    text-align: center;
+    color: #161515;
+}
+
+.main-product-description-description {
+    margin-top: 49px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 41px;
+    text-align: center;
+    color: #161515;
+}
+
+.main-product-description-link {
+    font-weight: 500;
+    color: #BB8B5D;
+}
